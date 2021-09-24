@@ -1,104 +1,383 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Grid items view with Flip Plugin</title>
-  <link rel="stylesheet" href="https://rendyca12.space/test/style.css">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="app">
-  <div class="gallery">
-    <div class="item" data-title="Owl" data-secondary="Hoo are you?" data-text="Owel lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-owl.png" alt="" />
-    </div>
-    <div class="item" data-title="Deer" data-secondary="Hi deer." data-text="Deer lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-deer.png" alt="" />
-    </div>
-    <div class="item" data-title="Hipster" data-secondary="What's new?" data-text="Hipster lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-hipster.png" alt="" />
-    </div>
-    <div class="item" data-title="Ram" data-secondary="I just drank a Mountain Dew." data-text="Ram lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-ram.png" alt="" />
-    </div>
-    <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here." data-text="Dog lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-dog.png" alt="" />
-    </div>
-    <div class="item" data-title="Bored Ram" data-secondary="No time for you." data-text="Ram side lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-sideram.png" alt="" />
-    </div>
-    <div class="item" data-title="Super Ram" data-secondary="I have lazer vision." data-text="Ram horns lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-multiram.png" alt="" />
-    </div>
-    <div class="item" data-title="Gorilla" data-secondary="I can fit a whole watermelon in my mouth." data-text="Gorrilla lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-gorilla.png" alt="" />
-    </div>
-    <div class="item" data-title="Birb" data-secondary="I'm just here to chill." data-text="Birb lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-bird.png" alt="" />
-    </div>
-    <div class="item" data-title="Owl" data-secondary="Hoo are you?" data-text="Owel lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-owl.png" alt="" />
-    </div>
-    <div class="item" data-title="Deer" data-secondary="Hi deer." data-text="Deer lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-deer.png" alt="" />
-    </div>
-    <div class="item" data-title="Hipster" data-secondary="What's new?" data-text="Hipster lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-hipster.png" alt="" />
-    </div>
-    <div class="item" data-title="Ram" data-secondary="I just drank a Mountain Dew." data-text="Ram lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-ram.png" alt="" />
-    </div>
-    <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here." data-text="Dog lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-dog.png" alt="" />
-    </div>
-    <div class="item" data-title="Bored Ram" data-secondary="No time for you." data-text="Ram side lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-sideram.png" alt="" />
-    </div>
-    <div class="item" data-title="Super Ram" data-secondary="I have lazer vision." data-text="Ram horns lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-multiram.png" alt="" />
-    </div>
-    <div class="item" data-title="Gorilla" data-secondary="I can fit a whole watermelon in my mouth." data-text="Gorrilla lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-gorilla.png" alt="" />
-    </div>
-    <div class="item" data-title="Birb" data-secondary="I'm just here to chill." data-text="Birb lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-bird.png" alt="" />
-    </div>
-    <div class="item" data-title="Owl" data-secondary="Hoo are you?" data-text="Owel lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-owl.png" alt="" />
-    </div>
-    <div class="item" data-title="Deer" data-secondary="Hi deer." data-text="Deer lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-deer.png" alt="" />
-    </div>
-    <div class="item" data-title="Hipster" data-secondary="What's new?" data-text="Hipster lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-hipster.png" alt="" />
-    </div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     
-    <div class="item" data-title="Ram" data-secondary="I just drank a Mountain Dew." data-text="Ram lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-ram.png" alt="" />
-    </div>
-    <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here." data-text="Dog lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-dog.png" alt="" />
-    </div>
-    <div class="item" data-title="Bored Ram" data-secondary="No time for you." data-text="Ram side lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/kl-sideram.png" alt="" />
-    </div>
-  </div>
-  
- 
-</div>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://Rendyca12.space/Style.css" />
+    <style>
+    	}
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+    </style>
+    
+    <link rel="shortcut icon" href="https://1.bp.blogspot.com/-J6LLLJ4EeHo/XutlMYkIe9I/AAAAAAAAB_s/_CJ-bRm2HZ0lJ0diRbIdwyi4IQqQ47PjQCK4BGAsYHg/s1920/20200618_173506.png" type="image/x-icon"> 
+    <title>Rendyca12</title>
+    
+  </head>
+  <body id="home">
+  	
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="https://rendyca12.space" style="font-family: Courier New, monospace">Rendyca12.Space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" style="font-family: 'Noto Serif', serif;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
 
-<div class="detail">
-  <img />
+    <!-- Jumbotron -->
+     <section class="jumbotron" style="font-family: 'Noto Serif', serif;">
+   	<div class="text-center">
+     	<img src="https://1.bp.blogspot.com/-xdp6Nkz4HV8/YU0ZSdaMCmI/AAAAAAAADTg/wmEZlvtq_AMlj3GlNYYH3DaWmJfY_QvPgCLcBGAsYHQ/s2560/20210924_070907.png" width="90%" style="border-radius:8px" alt="Responsive image">
+       </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="10"
+          d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,80C672,64,768,64,864,96C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+    	
+    <!-- About -->
+        <div class="card card-style text-center">
+        	<div class="container">
+          <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,lamp" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,yet" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,eight" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,crew" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,event" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,instrument" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,practical" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,feature" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,line" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,railroad" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,pride" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,too" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,bottle" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,base" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,cell" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,bag" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://source.unsplash.com/random/?tech,card" alt=""></div>
+        </div>
+    </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
 
-  <div class="content">
-    <div class="title">Placeholder title</div>
-    <div class="secondary">Placeholder secondary</div>
-    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.</div>
-  </div>
-</div>
-<!-- partial -->
-<script  src="https://rendyca12.space/test/script.js"></script>
+    <!-- About -->
+    <!-- Akhir About -->
 
-</body>
+    <!-- Projects -->
+    <!-- Akhir Projects -->
+
+    <!-- Contact -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="10"
+          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center pb-5" style="font-family: Courier New, monospace">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://Rendyca12.space" class="text-white fw-bold">Rendyca12</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+     <script>
+         var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {        
+        item.classList.toggle('full');        
+    });
+});
+      </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbysl4Rz8PD1oSreT5c0cu1WyYuH7LKKgfyVMOMw0cXLOGdfIRD51DI83dC_rEqc7ym2/exec';
+      const form = document.forms['ren-contact-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset formnya
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
 </html>
